@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HorizontalScrollViewDemo</string>
+    <string name="asus_low_battery_summarize_card_1">CPU占用</string>
+    <string name="asus_low_battery_summarize_card_2">反覆重启</string>
+    <string name="asus_low_battery_summarize_card_3">优化应用</string>
+    <string name="app_manager">软件管理</string>
+</resources>

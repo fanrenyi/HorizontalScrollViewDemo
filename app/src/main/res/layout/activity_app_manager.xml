@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xmlns:app="http://schemas.android.com/apk/res-auto" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_scan"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/firewall_call_linear_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="0dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yongchao_blue"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/custom_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/title_btn_left_selector"
+                android:drawablePadding="0dp"
+                android:gravity="center_vertical"
+                android:shadowColor="#39000000"
+                android:shadowDx="0"
+                android:shadowDy="6"
+                android:shadowRadius="6"
+                android:text="@string/app_manager"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabbtnlinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_below="@+id/firewall_call_linear_title">
+    </RelativeLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pst_indicator"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/transparent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+    <!-- 加入Tab的位置 -->
+
+    <com.example.fan.horizontalscrollview.PagerSlidingTabStrip
+        android:id="@+id/pst_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/tabbtnlinearLayout"
+        android:scrollbars="none"
+        android:background="#FFF"
+        android:textColor="@color/pst_tab_text_selector"
+        android:textSize="18sp"
+        app:indicatorColor="@color/yongchao_blue"
+        app:shouldExpand="true"
+        app:underlineLongPercentage="1" >
+    </com.example.fan.horizontalscrollview.PagerSlidingTabStrip>
+
+
+</RelativeLayout>
